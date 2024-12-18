@@ -13,8 +13,8 @@
 </head>
 <body>
 
-    <section id="wrapper" class="container-fluid p-0">
-        <nav class="navbar navbar-expand-lg bg-dark" data-bs-theme="dark">
+    <section id="wrapper" class="container-fluid p-0 d-flex flex-column gap-5 position-relative">
+        <nav class="navbar navbar-expand-lg bg-dark sticky-top" data-bs-theme="dark">
             <!-- Navbar content -->
             <div class="container-fluid">
                 <a class="navbar-brand m-0 me-lg-3 d-flex justify-content-center align-items-center" href="#">
@@ -48,13 +48,13 @@
             </div>
         </nav>
         <!-- content section -->
-        <section class="container-md bg-warning d-flex justify-content-center">
-            <section class="row container-md bg-danger p-0">
+        <section class="container-md d-flex justify-content-center">
+            <section class="row container-md p-0">
                 <!-- main container -->
-                <div class="col-12 col-lg-8 d-flex flex-column p-0 p-sm-2 bg-success">
+                <div class="col-12 col-lg-8 d-flex flex-column p-0 p-sm-2">
                     <!-- table title -->
                     <div id="table-title" class="d-flex justify-content-between">
-                        <p>Catalogo Libri</p>
+                        <p class="fs-5">Catalogo Libri</p>
                         <button type="button" class="btn btn-primary">Aggiungi Libro</button>
                     </div>
                     <!-- table -->
@@ -252,7 +252,7 @@
                     </table>
                 </div>
                 <!-- aside container -->
-                <div class="col-12 col-lg-4">
+                <div class="col-12 col-lg-4 d-flex flex-column gap-3">
                     <!-- todo -->
                     <div class="card">
                         <div class="card-header">Todo</div>
