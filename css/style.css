@@ -2,3 +2,8 @@
     max-width: 40px;
     aspect-ratio: 1;
 }
+
+/* add font size to bs */
+.fs-7 {
+    font-size: 0.875rem;
+}
