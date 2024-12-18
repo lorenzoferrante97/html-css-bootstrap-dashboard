@@ -1,0 +1,4 @@
+.navbar-brand figure {
+    max-width: 40px;
+    aspect-ratio: 1;
+}
