@@ -112,11 +112,14 @@
                             <div class="col-12 col-lg-4 mb-2">
                                 <div>
                                     <label for="book-isbn" class="form-label">ISBN#</label>
-                                    <input type="text" class="form-control" id="book-isbn" placeholder="978-88-89637-15-9">
+                                    <input type="text" class="form-control" id="book-isbn"
+                                        placeholder="978-88-89637-15-9">
                                 </div>
                             </div>
                         </div>
-                        <div class="text-secondary"><hr></div>
+                        <div class="text-secondary">
+                            <hr>
+                        </div>
                     </form>
                 </div>
             </div>
@@ -124,9 +127,16 @@
             <div class="row row-cols-1">
                 <!-- note -->
                 <div class="col">
-                    <label for="book-note">Note</label>
                     <div class="form-floating">
-                        <textarea class="form-control" placeholder="Scrivi le tue note qui..." id="book-note" style="height: 100px"></textarea>
+                        <textarea class="form-control" placeholder="Scrivi le tue note qui..." id="book-note"
+                            style="height: 100px"></textarea>
+                        <label for="book-note">Note</label>
+                    </div>
+                    <div class="form-check mt-2">
+                        <input class="form-check-input" type="checkbox" value="" id="book-digital">
+                        <label class="form-check-label" for="book-digital">
+                            Disponibile anche in digitale
+                        </label>
                     </div>
                 </div>
             </div>
