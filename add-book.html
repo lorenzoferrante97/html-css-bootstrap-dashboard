@@ -65,20 +65,40 @@
                 </div>
                 <!-- form -->
                 <div class="col-12">
-                    <form>
+                    <form class="needs-validation" novalidate>
                         <div class="row">
                             <!-- author name -->
                             <div class="col-6 mb-2">
                                 <div>
                                     <label for="author-name" class="form-label">Nome Autore</label>
-                                    <input type="text" class="form-control" id="author-name" placeholder="Gideon">
+                                    <input type="text" class="form-control" id="author-name" placeholder="Gideon" minlength="3" maxlength="25">
+                                    <!-- tip -->
+                                    <p class="form-text mb-0">2-25 characters</p>
+                                    <!-- success validation -->
+                                    <div class="valid-feedback">
+                                        <p>Looks Good!</p>
+                                    </div>
+                                    <!-- error validation -->
+                                    <div class="invalid-feedback">
+                                        <p>Too short/long name</p>
+                                    </div>
                                 </div>
                             </div>
                             <!-- author surname -->
                             <div class="col-6 mb-2">
                                 <div>
                                     <label for="author-surname" class="form-label">Cognome Autore</label>
-                                    <input type="text" class="form-control" id="author-surname" placeholder="Ofnir">
+                                    <input type="text" class="form-control" id="author-surname" placeholder="Ofnir" minlength="2" maxlength="25">
+                                    <!-- tip -->
+                                    <p class="form-text mb-0">2-25 characters</p>
+                                    <!-- success validation -->
+                                    <div class="valid-feedback">
+                                        <p>Looks Good!</p>
+                                    </div>
+                                    <!-- error validation -->
+                                    <div class="invalid-feedback">
+                                        <p>Too short/long surname</p>
+                                    </div>
                                 </div>
                             </div>
                             <!-- book title -->
@@ -86,7 +106,6 @@
                                 <div>
                                     <label for="book-title" class="form-label">Titolo Libro</label>
                                     <input type="text" class="form-control" id="book-title" placeholder="L'Interregno">
-                                    <p class="form-text">Titolo versione italiana</p>
                                 </div>
                             </div>
                             <!-- genre -->
@@ -150,7 +169,7 @@
             integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
             crossorigin="anonymous"></script>
         <!-- form validation js -->
-        <script src="js/form-validation.js"></script>
+        <script src="./js/form-validation.js"></script>
 </body>
 
 
