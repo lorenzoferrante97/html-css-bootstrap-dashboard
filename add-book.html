@@ -106,6 +106,16 @@
                                 <div>
                                     <label for="book-title" class="form-label">Titolo Libro</label>
                                     <input type="text" class="form-control" id="book-title" placeholder="L'Interregno" required>
+                                    <!-- tip -->
+                                    <p class="form-text mb-0">*Required</p>
+                                    <!-- success validation -->
+                                    <div class="valid-feedback">
+                                        <p>Nice book!</p>
+                                    </div>
+                                    <!-- error validation -->
+                                    <div class="invalid-feedback">
+                                        <p>This field is required</p>
+                                    </div>
                                 </div>
                             </div>
                             <!-- genre -->
@@ -118,13 +128,33 @@
                                         <option value="2">Thriller</option>
                                         <option value="3">Horror</option>
                                     </select>
+                                    <!-- tip -->
+                                    <p class="form-text mb-0">*Required</p>
+                                    <!-- success validation -->
+                                    <div class="valid-feedback">
+                                        <p>Nice genre!</p>
+                                    </div>
+                                    <!-- error validation -->
+                                    <div class="invalid-feedback">
+                                        <p>This field is required</p>
+                                    </div>
                                 </div>
                             </div>
                             <!-- year -->
                             <div class="col-12 col-lg-4 mb-2">
                                 <div>
                                     <label for="book-year" class="form-label">Anno di pubblicazione</label>
-                                    <input type="text" class="form-control" id="book-year" placeholder="2022">
+                                    <input type="number" class="form-control" id="book-year" placeholder="2022" min="1945" max="2024">
+                                    <!-- tip -->
+                                    <p class="form-text mb-0">Accettiamo libri pubblicati dal 1945 ad oggi</p>
+                                    <!-- success validation -->
+                                    <div class="valid-feedback">
+                                        <p>A good year!</p>
+                                    </div>
+                                    <!-- error validation -->
+                                    <div class="invalid-feedback">
+                                        <p>Please insert a valid year</p>
+                                    </div>
                                 </div>
                             </div>
                             <!-- ISBN code -->
