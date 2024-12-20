@@ -104,10 +104,8 @@
                             <!-- book title -->
                             <div class="col-12 mb-2">
                                 <div>
-                                    <label for="book-title" class="form-label">Titolo Libro</label>
+                                    <label for="book-title" class="form-label">Titolo Libro<span class="form-text mb-0 ms-1">*Required</span></label>
                                     <input type="text" class="form-control" id="book-title" placeholder="L'Interregno" required>
-                                    <!-- tip -->
-                                    <p class="form-text mb-0">*Required</p>
                                     <!-- success validation -->
                                     <div class="valid-feedback">
                                         <p>Nice book!</p>
@@ -121,15 +119,13 @@
                             <!-- genre -->
                             <div class="col-12 col-lg-4 mb-2">
                                 <div>
-                                    <label for="book-genres" class="form-label">Genere</label>
+                                    <label for="book-genres" class="form-label">Genere<span class="form-text mb-0 ms-1">*Required</span></label>
                                     <select class="form-select" aria-label="book genres" id="book-genres" required>
-                                        <option selected>Scegli il genere</option>
+                                        <!-- <option selected>Scegli il genere</option> -->
                                         <option value="1">Fantasy</option>
                                         <option value="2">Thriller</option>
                                         <option value="3">Horror</option>
                                     </select>
-                                    <!-- tip -->
-                                    <p class="form-text mb-0">*Required</p>
                                     <!-- success validation -->
                                     <div class="valid-feedback">
                                         <p>Nice genre!</p>
