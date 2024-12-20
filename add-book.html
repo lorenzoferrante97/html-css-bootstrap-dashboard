@@ -162,7 +162,17 @@
                                 <div>
                                     <label for="book-isbn" class="form-label">ISBN#</label>
                                     <input type="text" class="form-control" id="book-isbn"
-                                        placeholder="978-88-89637-15-9">
+                                        placeholder="978-88-89637-15-9" required pattern="^\d{3}-\d{2}-\d{5}-\d{2}-\d{1}$">
+                                    <!-- tip -->
+                                    <p class="form-text mb-0">Formato codice ISBN#: 123-45-67890-12-3</p>
+                                    <!-- success validation -->
+                                    <div class="valid-feedback">
+                                        <p>Valid code!</p>
+                                    </div>
+                                    <!-- error validation -->
+                                    <div class="invalid-feedback">
+                                        <p>Invalid format</p>
+                                    </div>
                                 </div>
                             </div>
                         </div>
